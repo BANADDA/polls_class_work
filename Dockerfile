@@ -8,6 +8,9 @@ WORKDIR /app
 COPY mvnw .
 COPY .mvn .mvn
 
+# Grant execute permissions to mvnw
+RUN chmod +x mvnw
+
 # Copy the pom.xml file
 COPY pom.xml .
 
